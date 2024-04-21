@@ -1,0 +1,57 @@
+public class employee {
+ private int employeeID;
+ private String employeename;
+ private String address;
+ private String dob;
+ protected float salary; 
+public employee(int employeeID,String employeename,String address,String dob,float salary)
+{
+this.employeeID=employeeID;
+this.employeename=employeename;
+this.address=address;
+this.dob=dob;
+this.salary=salary;
+}
+public void displayinfo()
+{
+    System.out.println("Employee ID"+employeeID);
+    System.out.println("Employee name"+employeename);
+    System.out.println("Address"+address);
+    System.out.println("Date of Birth"+dob);
+    System.out.println("Salary"+salary);
+}
+}
+public class execative extends employee implements paybonus {
+    private float travel;
+    public execative(int employeeID, String employeename, String address, String dob, float salary) {
+        super(employeeID, employeename, address, dob, salary);
+        this.travel=travel;
+    }
+    public void calcincentive();
+    {
+        float incentive;
+        if(salary>5000);
+        incentive=salary*0.10f;
+        System.out.println("Incentive amount is"+incentive);
+    }
+    else
+    System.out.println("Not eligible on incentive payment");
+}
+
+interface
+
+public interface paybonus {    
+}
+public void calcincentive();
+
+package com.mycompany.mavenproject6;
+
+public class Mavenproject6 {
+
+    public static void main(String[] args) {
+        execative e1=new execative(1234,"Indika","Colombo",1992/10/20,2000.00f,2000.00f);
+                e1.calcincentive();
+                e1.displayinfo();
+    }
+}
+

@@ -1,0 +1,39 @@
+package com.mycompany.mavenproject3;
+
+
+class student {
+private int admNo;
+private String name;
+public void setval(int admNo,String name)
+{
+    this.admNo=admNo;
+    this.name=name;    
+}
+public void displaydata()
+{
+    System.out.println("Admission number"+admNo);
+    System.out.println("Name"+name);
+}
+}    
+
+package com.mycompany.mavenproject3;
+
+
+class marks extends student{
+ private int m1,m2;
+    public void setmarks(int m1,int m2)
+    {
+        this.m1=m1;
+        this.m2=m2;
+    }
+    public void displayaverage()
+    {
+        float avg=(float)(m1+m2)/2;
+        System.out.println("The average is"+avg);
+    }
+
+    void displayavg() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+}   
+

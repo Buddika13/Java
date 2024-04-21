@@ -1,0 +1,43 @@
+public class bankaccount {
+ private int accno;
+private String holdername;
+private float balance;
+public void setdata(int a,String h,float b)
+{
+    accno=a;
+    holdername=h;
+    balance=b;
+}
+public void deposit(float d)
+{
+    balance=balance+d;
+    System.out.println("New balance is"+balance);  
+}
+public float checkbalance()
+{
+    return balance;
+}
+public void display()
+{
+    System.out.println("Account no"+accno);
+    System.out.println("Account holder name"+holdername);
+    System.out.println("Balance"+balance);
+}
+}
+package javaapplication10;
+
+public class JavaApplication10 {
+
+  
+    public static void main(String[] args) {
+       bankaccount b=new bankaccount();
+       b.setdata(1234,"abc",5000.00f);
+       b.deposit(2500.00f);
+       System.out.println("New balance is"+b.checkbalance);
+       b.display();
+       b.withdraw(2500.00f);
+                
+    }
+    
+}
+

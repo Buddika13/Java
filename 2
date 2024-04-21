@@ -1,0 +1,26 @@
+public class student {
+ private int admno;
+ private String name;
+ public void setvalues(int a,int n)
+ {
+     admno=a;
+     name=n;
+ }
+public void display();
+{
+    System.out.println("Admission number"+admno);
+    System.out.println("Name"+name);
+}
+}
+package javaapplication9;
+
+
+public class JavaApplication9 {
+
+    public static void main(String[] args) {
+      student s1=new student()
+      s1.setvalues(1234,"Amal");
+      s1.display();
+    }
+    
+}

@@ -1,0 +1,29 @@
+public class employee {
+private int empNo;
+private String name;  
+private float basicsalary;
+}
+public void setvalues(int e,String n,float bs)
+{
+empNo=e;
+name=n;
+basicsalary=b;
+}
+public void display details()
+{
+System.out.println("Emplyee Number"+empNo);
+System.out.println("Name"+name);
+System.out.println("Employee basic salary"+basicsalary);
+}
+package javaapplication12;
+
+public class JavaApplication12 {
+
+
+    public static void main(String[] args) {
+     employee e1=new employee();
+     e1.setdata(1234,"Kamal",5000.00f);
+     e1.displaydetails();
+    }
+    
+}

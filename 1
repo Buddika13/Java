@@ -1,0 +1,26 @@
+public class rectangle {
+ private int width;
+ private int height;
+ public void set data(int w,int h)
+ {
+     width=w;
+     height=h;
+ }
+ public void display area()
+ {
+     System.out.println("Area is"+(width*height));
+ }
+}
+package javaapplication7;
+
+public class JavaApplication7 {
+
+   
+    public static void main(String[] args) {
+        rectangle r1=new rectangle();
+        r1.setdata(15,20);
+        r1.displayarea();
+        
+    }
+    
+}
